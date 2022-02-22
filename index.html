@@ -8,11 +8,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Il programma dovrà chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero. <br>
-        Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole: <br>
-        il prezzo del biglietto è definito in base ai km (0.21 € al km) <br>
-        va applicato uno sconto del 20% per i minorenni <br>
-        va applicato uno sconto del 40% per gli over 65.</h1>
+    <div class="header">
+        <h1>Genera un biglietto del treno</h1>
+        <div class="container">
+            <div class="container-input">
+                <label for="name">Nome e Cognome:</label>
+                <input type="text" name="" id="name">
+            </div>
+            <div class="container-input">
+                <label for="count-km">chilometri da fare:</label>
+                <input type="number" name="" id="count-km">
+            </div>
+            <div class="container-input">
+                <select name="age" id="age">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="senior">Over 65</option>
+                </select>
+            </div>
+        </div>  
+        <div class="cont-btn">
+            <button id="generate" class="button"><span>Genera Ticket</span></button>
+            <button id="clear" class="button"><span>Annulla</span></button>
+        </div>
+    </div>
+
     <div class="cont-img">
         <img src="img/biglietto-treno.jpg" alt="">
         <div class="cont-txt">
@@ -20,9 +40,14 @@
             <h3 id="km"></h3>
             <h3 id="sconto"> </h3>
             <h3 id="prezzo"></h3>
+        </div>        
+        <div class="cont-txt2">
+            <h3 id="n-treno"></h3>
+            <h3 id="carrozza"></h3>
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/main.js"></script>
 </body>
 </html>
